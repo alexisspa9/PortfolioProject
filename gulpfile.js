@@ -1,6 +1,5 @@
+const { begin_watch } = require("./gulp/tasks/watch");
 const gulp = require("gulp");
 
-gulp.task('default', (done) => {
-    console.log('Heyyy!')
-    done();
-})
+
+gulp.task('watch', begin_watch);
