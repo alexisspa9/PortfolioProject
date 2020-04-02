@@ -1,0 +1,5 @@
+@define-mixin atMedium {
+    @media screen and (min-width:810px) {
+        @mixin-content;
+    }
+}

@@ -7,37 +7,39 @@
     <link rel="stylesheet" type="text/css" href="./dist/styles/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-logo">
-            <div class="header-image">
-                <a href="/">
-                    <img src="assets/images/icons/ninja.svg" alt="profile logo">
-                </a>
+    <div class="container">
+        <header class="header">
+            <div class="header-logo">
+                <div class="header-image">
+                    <a href="/">
+                        <img src="assets/images/icons/ninja.svg" alt="profile logo">
+                    </a>
+                </div>
+                <div class="header__text">
+                    <a class="header-title link--no-underline link--dark" href="/">
+                        Alexander Spanos
+                    </a>
+                    <p class="header-text">
+                        Software Development
+                    </p>
+                </div>
             </div>
-            <div class="header__text">
-                <a class="header-title link--no-underline link--dark" href="/">
-                    Alexander Spanos
-                </a>
-                <p class="header-text">
-                    Software Development
-                </p>
+            <div class="header-button">
+                <div id="navButton">
+                    <span class="header-button__bar"></span>
+                    <span class="header-button__bar"></span>
+                </div>
             </div>
-        </div>
-        <div class="header-button">
-            <div id="navButton">
-                <span class="header-button__bar"></span>
-                <span class="header-button__bar"></span>
-            </div>
-        </div>
-        <nav class="header-navbar" id="navMenu">
-            <ul class="header-navbar__navigation">
-                <li class="active"><a href="/" class="link--no-underline link--dark">About</a></li>
-                <li><a href="/" class="link--no-underline link--dark">Projects</a></li>
-                <li><a href="/" class="link--no-underline link--dark">Resume</a></li>
-                <li><a href="mailto:alex@alexanderspanos.gr" class="link--no-underline link--grey">alex@alexanderspanos.gr</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="header-navbar" id="navMenu">
+                <ul class="header-navbar__navigation">
+                    <li class="active"><a href="/" class="link--no-underline link--dark">About</a></li>
+                    <li><a href="/" class="link--no-underline link--dark">Projects</a></li>
+                    <li><a href="/" class="link--no-underline link--dark">Resume</a></li>
+                    <li><a href="mailto:alex@alexanderspanos.gr" class="link--no-underline link--grey">alex@alexanderspanos.gr</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     
     <script src="./dist/scripts/main.js"></script>
     
