@@ -275,6 +275,9 @@ template {
 [hidden] {
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -283,12 +286,16 @@ img {
 }
 .link--no-underline {
     text-decoration: none;
+    transition: all 0.4s;
 }
 .link--dark {
     color: black;
 }
 .link--grey {
     color: #b7b7b7;
+}
+.link--color-hoverable:hover {
+    color: #e63b3b;
 }
 .container {
     max-width: 1180px;
@@ -422,3 +429,9 @@ img {
     
 }
     }
+.section_test {
+    height: 800px;
+    width: 100%;
+    background-color: grey;
+    border: 2px solid red;
+}

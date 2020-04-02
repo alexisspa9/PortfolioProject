@@ -4,3 +4,11 @@
 @import "base/_color_vars.css";
 @import "base/_global";
 @import "modules/_header";
+
+
+.section_test {
+    height: 800px;
+    width: 100%;
+    background-color: grey;
+    border: 2px solid red;
+}
