@@ -1,1 +1,1 @@
-console.log("Hey youss!");
+import Navbar from "./modules/Navbar";

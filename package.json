@@ -9,11 +9,18 @@
   "author": "Alexander Spanos <alexisspa9@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "autoprefixer": "^9.7.5",
+    "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
+    "core-js": "^3.6.4",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-watch": "^5.0.1",

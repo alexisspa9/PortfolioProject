@@ -90,10 +90,22 @@
 /*!***********************************!*\
   !*** ./app/assets/scripts/App.js ***!
   \***********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Navbar */ \"./app/assets/scripts/modules/Navbar.js\");\n/* harmony import */ var _modules_Navbar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_Navbar__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+
+/***/ }),
+
+/***/ "./app/assets/scripts/modules/Navbar.js":
+/*!**********************************************!*\
+  !*** ./app/assets/scripts/modules/Navbar.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"Hey youss!\");\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("console.log(\"test babel\");\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Navbar.js?");
 
 /***/ })
 
