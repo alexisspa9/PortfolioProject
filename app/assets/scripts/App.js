@@ -1,1 +1,3 @@
-import Navbar from "./modules/Navbar";
+import MobileMenu from "./modules/MobileMenu";
+
+const Menu = new MobileMenu();

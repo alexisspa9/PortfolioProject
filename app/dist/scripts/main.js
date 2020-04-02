@@ -94,18 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/Navbar */ \"./app/assets/scripts/modules/Navbar.js\");\n/* harmony import */ var _modules_Navbar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_Navbar__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/MobileMenu */ \"./app/assets/scripts/modules/MobileMenu.js\");\n\nconst Menu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\n//# sourceURL=webpack:///./app/assets/scripts/App.js?");
 
 /***/ }),
 
-/***/ "./app/assets/scripts/modules/Navbar.js":
-/*!**********************************************!*\
-  !*** ./app/assets/scripts/modules/Navbar.js ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./app/assets/scripts/modules/MobileMenu.js":
+/*!**************************************************!*\
+  !*** ./app/assets/scripts/modules/MobileMenu.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"test babel\");\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/Navbar.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nclass MobileMenu {\n  constructor() {\n    this.button = document.getElementById(\"navButton\");\n    this.menuContent = document.getElementById(\"navMenu\");\n    this.events();\n  }\n\n  events() {\n    this.button.addEventListener(\"click\", this.toggleClasses.bind(this));\n  }\n\n  toggleClasses() {\n    this.menuContent.classList.toggle(\"header-navbar--open\");\n    this.button.classList.toggle(\"header-button--open\");\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (MobileMenu);\n\n//# sourceURL=webpack:///./app/assets/scripts/modules/MobileMenu.js?");
 
 /***/ })
 

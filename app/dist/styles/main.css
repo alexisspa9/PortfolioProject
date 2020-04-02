@@ -324,13 +324,18 @@ img {
         z-index: 1000;
         
     }
+.header-button>div {
+            width: 54px;
+            height: 35px;
+            padding-top: 10px;
+        }
 .header-button__bar {
             height: 2px;
             width: 35px;
             background-color: black;
             background: black;
             display: block;
-            margin-top: 6px;
+            margin: 6px auto 0px auto;
             transition: all 0.4s;
         }
 .header-button--open .header-button__bar:first-of-type {
