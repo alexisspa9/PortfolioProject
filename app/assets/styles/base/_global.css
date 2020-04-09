@@ -16,6 +16,11 @@ img {
     max-width: 100%;
 }
 
+h4 {
+    font-size: 1.3rem;
+}
+
+
 
 .link--no-underline {
     text-decoration: none;
@@ -48,11 +53,41 @@ img {
     }
 }
 
+
+p {
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.3rem;
+}
+
 p.large {
     font-size: 0.9rem;
     font-weight: 300;
+     line-height: 1.5rem;
 
     @mixin atMedium {
         font-size: 1.3rem;
+    }
+}
+
+p.extra-large {
+    font-size: 1.1em;
+    font-weight: 300;
+     line-height: 1.6rem;
+
+    @mixin atMedium {
+        font-size: 1.4rem;
+    }
+}
+
+.section {
+    
+    &-header {
+
+        &__title {
+            color: $grey;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
     }
 }

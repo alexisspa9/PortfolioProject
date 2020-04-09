@@ -3,7 +3,7 @@
     align-items: center;
     position:relative;
     height: calc(100vh - 50px);
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     @mixin atSmall {
         height: calc(100vh - 180px);
@@ -20,8 +20,8 @@
         @mixin atSmall {
             display: block;
             position: absolute;
-            bottom: 2px;
-            left:0px;
+            bottom: 5px;
+            left: 0;
             animation: bounce 2s infinite;
             transform-origin: center bottom;
         }

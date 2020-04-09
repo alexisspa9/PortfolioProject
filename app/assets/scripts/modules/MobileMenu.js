@@ -11,7 +11,7 @@ class MobileMenu {
     events() {
         this.button.addEventListener("click", this.toggleClasses.bind(this));
         this.links.forEach(link => {
-            link.addEventListener("click", this.toggleClasses.bind(this));
+            link.addEventListener("click", this.removeClasses.bind(this));
         })
     }
 
@@ -20,6 +20,13 @@ class MobileMenu {
         this.button.classList.toggle("header-button--open");
         this.body.classList.toggle("navbar--open");
         this.buttonWrapper.classList.toggle("header-button--is-open");
+    }
+
+    removeClasses() {
+        this.menuContent.classList.remove("header-navbar--open");
+        this.button.classList.remove("header-button--open");
+        this.body.classList.remove("navbar--open");
+        this.buttonWrapper.classList.remove("header-button--is-open");
     }
 }
 

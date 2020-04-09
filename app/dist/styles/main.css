@@ -321,6 +321,72 @@ template {
     transform: translate3d(0,-1px,0);
   }
 }
+.row {
+    display: flex;
+}
+.row--justify-center {
+        justify-content: center;
+    }
+.row--justify-start {
+        justify-content : flex-start;
+    }
+.row--justify-end {
+        justify-content : flex-end;
+    }
+.row--align-center {
+        align-items: center;
+    }
+.row--align-top {
+        align-items: flex-start;
+    }
+.row--align-bottom {
+        align-items: flex-end;
+    }
+.row--wrap {
+        flex-flow: row wrap;
+    }
+.col {
+    box-sizing: border-box;
+    
+}
+.col--gutters {
+        padding: 15px;
+    }
+.col--gutters-right {
+        padding-right: 15px;
+    }
+.col--gutters-left {
+        padding-left: 15px;
+    }
+.col--xs-12 {
+        width: 100%;
+    }
+.col--xs-6 {
+        width: 50%;
+    }
+.col--xs-4 {
+        width: 33.333%;
+    }
+@media screen and (min-width:810px) {
+.col--md-12 {
+            width: 100%
+    }
+    }
+@media screen and (min-width:810px) {
+.col--md-6 {
+            width: 50%
+    }
+    }
+@media screen and (min-width:810px) {
+.col--md-4 {
+            width: 33.333%
+    }
+    }
+@media screen and (min-width:810px) {
+.col--md-3 {
+            width: 25%
+    }
+    }
 html {
   scroll-behavior: smooth;
 }
@@ -338,6 +404,9 @@ body {
 }
 img {
     max-width: 100%;
+}
+h4 {
+    font-size: 1.3rem;
 }
 .link--no-underline {
     text-decoration: none;
@@ -365,15 +434,36 @@ img {
         padding: 0px 10px
 }
     }
+p {
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.3rem;
+}
 p.large {
     font-size: 0.9rem;
     font-weight: 300;
+     line-height: 1.5rem;
 }
 @media screen and (min-width:810px) {
 p.large {
         font-size: 1.3rem
 }
     }
+p.extra-large {
+    font-size: 1.1em;
+    font-weight: 300;
+     line-height: 1.6rem;
+}
+@media screen and (min-width:810px) {
+p.extra-large {
+        font-size: 1.4rem
+}
+    }
+.section-header__title {
+            color: #b7b7b7;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
 .header {
     margin-top: 15px;
     position: relative;
@@ -523,7 +613,7 @@ p.large {
     align-items: center;
     position:relative;
     height: calc(100vh - 50px);
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 @media screen and (min-width:680px) {
 .hero {
@@ -541,8 +631,8 @@ p.large {
 .hero__arrow {
             display: block;
             position: absolute;
-            bottom: 2px;
-            left:0px;
+            bottom: 5px;
+            left: 0;
             -webkit-animation: bounce 2s infinite;
                     animation: bounce 2s infinite;
             transform-origin: center bottom

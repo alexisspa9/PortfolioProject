@@ -3,6 +3,7 @@
 @import "base/_mixins.css";
 @import "base/_color_vars.css";
 @import "base/_animations.css";
+@import "base/_grid.css";
 @import "base/_global";
 @import "modules/_header";
 @import "modules/_hero";
