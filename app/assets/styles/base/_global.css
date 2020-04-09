@@ -29,12 +29,29 @@ img {
     color: $grey;
 }
 
+.link--colored {
+    color: $mainColor;
+}
+
 .link--color-hoverable:hover {
     color: $mainColor;
 }
 
 .container {
-    max-width: 1180px;
-    padding: 0px 10px;
+    max-width: 1120px;
+    padding: 0px 20px;
     margin: 0 auto;
+    
+    @mixin atMedium {
+        padding: 0px 10px;
+    }
+}
+
+p.large {
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    @mixin atMedium {
+        font-size: 1.3rem;
+    }
 }

@@ -2,13 +2,15 @@
 @import "normalize.css";
 @import "base/_mixins.css";
 @import "base/_color_vars.css";
+@import "base/_animations.css";
 @import "base/_global";
 @import "modules/_header";
+@import "modules/_hero";
 
 
-.section_test {
+/* .section_test {
     height: 800px;
     width: 100%;
     background-color: grey;
     border: 2px solid red;
-}
+} */
