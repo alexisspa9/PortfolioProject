@@ -278,6 +278,14 @@ template {
 html {
   scroll-behavior: smooth;
 }
+::-moz-selection {
+  color: white;
+  background: #e63b3b;
+}
+::selection {
+  color: white;
+  background: #e63b3b;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -289,7 +297,7 @@ img {
     transition: all 0.4s;
 }
 .link--dark {
-    color: black;
+    color: #000000;
 }
 .link--grey {
     color: #b7b7b7;

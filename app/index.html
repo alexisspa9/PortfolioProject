@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Spanos - Software Developer</title>
+    <title>Alexander Spanos | Full Stack Web & Software Developer</title>
     <link rel="stylesheet" type="text/css" href="./dist/styles/main.css">
 </head>
 <body>
-    <div class="container">
+    <div class="header-wrapper container">
         <header class="header">
             <div class="header-logo">
-                <div class="header-image">
+                <div class="header__image">
                     <a href="/">
                         <img src="assets/images/icons/ninja.svg" alt="profile logo">
                     </a>
@@ -32,17 +32,60 @@
             </div>
             <nav class="header-navbar" id="navMenu">
                 <ul class="header-navbar__navigation">
-                    <li class="active"><a href="#about" class="link--no-underline link--dark link--color-hoverable">About</a></li>
+                    <li class="active"><a href="#hero" class="link--no-underline link--dark link--color-hoverable">About</a></li>
                     <li><a href="#projects" class="link--no-underline link--dark link--color-hoverable">Projects</a></li>
                     <li><a href="#contact" class="link--no-underline link--dark link--color-hoverable">Resume</a></li>
                     <li><a href="mailto:alex@alexanderspanos.gr" class="link--no-underline link--grey link--color-hoverable">alex@alexanderspanos.gr</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="about" class="section_test">About</section>
-        <section id="projects" class="section_test">Projects</section>
-        <section id="contact" class="section_test">Contact</section>
     </div>
+    <main class="container">
+        <section id="hero" class="section_test">
+            <h1 class="hero__title">
+                Hey! I'm Alexander Spanos, a software developer.
+            </h1>
+            <div class="hero__text">
+                <p>I build backend apis and frontend websites for your company!</p>
+                <p>I build backend apis and frontend websites for your company!</p>
+                <p>Let's build something together <a href="mailto:alex@alexanderspanos.gr">alex@alexanderspanos.gr</a></p>
+            </div>
+            <div class="hero__arrow">
+                <a href="#">arrow</a>
+            </div>
+        </section>
+        <section id="skills" class="section_test section-skills">
+            <div class="section-header">
+                <h2 class="section-header__title">
+                    Skills
+                </h2>
+            </div>
+            <div class="section-content">
+                <div class="section-skills__wrapper">
+                    <div class="section-skills__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quaerat? Eius veniam culpa exercitationem id accusantium optio reprehenderit fugit aliquid soluta similique laborum in deserunt odio, officia minus ex voluptatibus?
+                    </div>
+                    <div class="section-skills__list">
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section_test">
+            <div class="section-header">
+                <h2 class="section-header__title">
+                    Projects
+                </h2>
+            </div>
+        </section>
+        <section id="contact" class="section_test">Contact</section>
+    </main>
 
     <footer>
         <div id="goToTop">

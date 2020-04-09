@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  color: white;
+  background: $mainColor;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
