@@ -334,6 +334,7 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
 img {
     max-width: 100%;
@@ -409,6 +410,11 @@ p.large {
         z-index: 1000;
         
     }
+.header-button--is-open {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+        }
 @media screen and (min-width:810px) {
 .header-button {
             right: 15px
@@ -458,6 +464,7 @@ p.large {
         opacity: 0;
         transition: all 0.4s;
         z-index:0;
+        overflow:hidden;
         
     }
 .header-navbar--open {
@@ -508,6 +515,9 @@ p.large {
     
 }
     }
+.navbar--open {
+    overflow: hidden;
+}
 .hero {
     display: flex;
     align-items: center;

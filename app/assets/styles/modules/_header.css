@@ -38,6 +38,12 @@
         right: 3px;
         z-index: 1000;
 
+        &--is-open {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+        }
+
         @mixin atMedium {
             right: 15px;
         }
@@ -90,6 +96,8 @@
         opacity: 0;
         transition: all 0.4s;
         z-index:0;
+        overflow:hidden;
+
 
         &--open {
         visibility: visible;
@@ -139,4 +147,8 @@
         align-items: center;
     }
     
+}
+
+.navbar--open {
+    overflow: hidden;
 }
