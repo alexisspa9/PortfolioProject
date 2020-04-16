@@ -661,6 +661,100 @@ p.extra-large {
             max-width: 80%
     }
     }
+.section-projects {
+    margin-top: 80px;
+}
+.projects__wrapper {
+    margin-top: 25px;
+}
+.project {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.project__image {
+        display: block;
+    }
+.project__title h3 {
+            margin: 12px 0 2px 0;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+.project__footer h5 {
+            margin: 6px 0 10px 0;
+            font-size: 0.75rem;
+            color: #b7b7b7;
+        }
+@media screen and (min-width:810px) {
+
+        .project-content {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            background: blue;
+            transform: translateY(10%);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 0;
+            transition: all 0.6s;
+        }
+
+        .project__title {
+            padding: 10px;
+        }
+
+            .project__title h3 {
+                color:white;
+                font-size: 1.2rem;
+            }
+
+            .project__title:after {
+                content: "";
+                margin-top: 22px;
+                height: 2px;
+                background: white;
+                width: 25px;
+                display: block;
+            }
+
+        .project__footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+        }
+            
+            .project__footer h5 {
+                color: white;
+                font-size: 0.9rem;
+            }
+            .project:hover .project-content {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                z-index: 5;
+            }
+
+        .project:nth-child(even) {
+            padding-left: 8px;
+        }
+
+            .project:nth-child(even) .project-content {
+                right:0;
+                width: calc(100% - 8px);
+            }
+
+        .project:nth-child(odd) {
+            padding-right: 8px;
+        }
+            
+            .project:nth-child(odd) .project-content {
+                left:0;
+                width: calc(100% - 8px);
+            }
+    }
 /* .section_test {
     height: 800px;
     width: 100%;
