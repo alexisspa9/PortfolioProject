@@ -424,6 +424,14 @@ h4 {
 .link--color-hoverable:hover {
     color: #e63b3b;
 }
+.link--large {
+    font-size: 0.9rem;
+}
+@media screen and (min-width:810px) {
+.link--large {
+    font-size: 1.1rem
+}
+    }
 .container {
     max-width: 1120px;
     padding: 0px 20px;
@@ -755,9 +763,9 @@ p.extra-large {
                 width: calc(100% - 8px);
             }
     }
-/* .section_test {
-    height: 800px;
-    width: 100%;
-    background-color: grey;
-    border: 2px solid red;
-} */
+.footer {
+    height: 600px;
+    background-color: #262626;
+    margin-top: 100px;
+}
+

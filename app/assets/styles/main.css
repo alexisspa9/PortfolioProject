@@ -8,11 +8,5 @@
 @import "modules/_header";
 @import "modules/_hero";
 @import "modules/_projects";
+@import "modules/_footer";
 
-
-/* .section_test {
-    height: 800px;
-    width: 100%;
-    background-color: grey;
-    border: 2px solid red;
-} */
