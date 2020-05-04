@@ -98,3 +98,8 @@ p.extra-large {
         }
     }
 }
+
+.no-bullets {
+    list-style: none;
+    padding: 0;
+}

@@ -1,5 +1,48 @@
 .footer {
-    height: 600px;
     background-color: $Bblack;
     margin-top: 100px;
+    padding: 50px 0;
+
+    h4 {
+        color: #c9c9c9;
+        font-size: 1.1rem;
+    }
+
+    a {
+        color: #5d5d5d;
+    }
+    p {
+        color: #5d5d5d;
+    }
+    
+    li {
+        padding: 5px 0;
+    }
+
+    .copyr {
+        margin-top: 50px;
+
+        img {
+            width: 20px;
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    .footer__link {
+        text-decoration: none;
+    }
+
+    .footer__link:hover {
+        text-decoration: underline;
+    }
+
+    #goToTop {
+        position: fixed;
+        bottom: 50px;
+        right: 35px;
+        width: 35px;
+        cursor: pointer;
+        animation: flash 1s;
+    }
 }
