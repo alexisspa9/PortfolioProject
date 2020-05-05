@@ -15,9 +15,7 @@ This project maintains the code for my personal portfolio project, this project 
 
 ### Methods used:
 - BEM
-- SVG sprites
 - Responsive Images
 - Mobile First
 - JS module pattern
-- Lazy loading images
 

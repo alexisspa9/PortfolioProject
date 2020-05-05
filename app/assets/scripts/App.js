@@ -1,3 +1,4 @@
+import "picturefill";
 import MobileMenu from "./modules/MobileMenu";
 import FooterDate from "./modules/FooterDate";
 import GoToTop from "./modules/GoToTop";

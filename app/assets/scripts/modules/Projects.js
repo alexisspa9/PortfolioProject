@@ -30,9 +30,24 @@ class Projects {
             //create img element
             const img_ele = document.createElement("img");
             img_ele.src = project.coverImage;
+            img_ele.alt = project.coverImage.split("/")[project.coverImage.split("/").length - 1].split("-").join(" ").replace(".jpg", "");
+            const source_large = document.createElement("source");
+            source_large.srcset = project.coverImageLarge;
+            source_large.media = "(min-width: 1380px)";
+            const source_medium = document.createElement("source");
+            source_medium.srcset = project.coverImageMedium;
+            source_medium.media = "(min-width: 990px)";
+            const source_small = document.createElement("source");
+            source_small.srcset = project.coverImage;
+            source_small.media = "(min-width: 640px)";
+            const picture_ele = document.createElement("picture");
+            picture_ele.appendChild(source_large);
+            picture_ele.appendChild(source_medium);
+            picture_ele.appendChild(source_small);
+            picture_ele.appendChild(img_ele);
             const img_container = document.createElement("div");
-            img_container.classList.add("project__image")
-            img_container.appendChild(img_ele);
+            img_container.classList.add("picture-image")
+            img_container.appendChild(picture_ele);
 
             //create project div
             const pp = document.createElement("div");

@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "picturefill": "^3.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
