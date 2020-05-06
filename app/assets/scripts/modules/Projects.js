@@ -46,7 +46,7 @@ class Projects {
             picture_ele.appendChild(source_small);
             picture_ele.appendChild(img_ele);
             const img_container = document.createElement("div");
-            img_container.classList.add("picture-image")
+            img_container.classList.add("project-image")
             img_container.appendChild(picture_ele);
 
             //create project div

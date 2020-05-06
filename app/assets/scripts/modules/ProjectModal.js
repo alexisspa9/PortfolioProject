@@ -15,6 +15,7 @@ class ProjectModal {
         this.modal_url = document.querySelector("[data-modal='url']");
     }
 
+
     asignEventListeners() {
         this.project_elements.forEach(project => {
             project.addEventListener("click", (e) => {
@@ -25,7 +26,24 @@ class ProjectModal {
         this.button.addEventListener("click", () => {
             this.closeModal();
         });
+        
     }
+
+
+        // preventDefault(e) {
+        //     e.preventDefault();
+        // }
+
+        // disableScroll() {
+        //     window.addEventListener('DOMMouseScroll', this.preventDefault); 
+        //     window.addEventListener('touchmove', this.preventDefault);
+        // }
+
+        // enableScroll() {
+        //     window.removeEventListener('DOMMouseScroll', this.preventDefault);
+        //     window.removeEventListener('touchmove', this.preventDefault);
+        // }
+
 
     openModal(id) {
         this.listenerFunc = this.escapeListener.bind(this);
@@ -49,15 +67,14 @@ class ProjectModal {
     
 
     clearModal() {
-        this.modal_image.innerHTML = "";
-        this.modal_title.innerText = "";
-        this.modal_subtitle.innerText = "";
-        this.modal_description.innerText = "";
-        this.modal_tags.innerText = "";
-        this.modal_github.innerText = "";
-        this.modal_github.href = "";
-        this.modal_url.innerText = "";
-        this.modal_url.href = "";
+        setTimeout(() => {
+            this.modal_image.innerHTML = "";
+            this.modal_title.innerText = "";
+            this.modal_subtitle.innerText = "";
+            this.modal_description.innerText = "";
+            this.modal_github.href = "";
+            this.modal_url.href = "";
+        }, 800);
     }
 
     addData(project) {
@@ -83,7 +100,6 @@ class ProjectModal {
         this.modal_title.innerText = project.title
         this.modal_subtitle.innerText = project.subtitle
         this.modal_description.innerText = project.description
-        this.modal_tags.innerText = project.tags
         this.modal_github.href = project.github
         this.modal_url.href = project.url
 

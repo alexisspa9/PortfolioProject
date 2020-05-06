@@ -14,8 +14,10 @@
     cursor: pointer;
 
 
-    &__image {
-        display: block;
+    &-image {
+        img {
+            display: block;
+        }
     }
 
     &__title {
@@ -42,7 +44,7 @@
             position: absolute;
             top: 0;
             height: 100%;
-            background: blue;
+            background: #de78788a;
             transform: translateY(10%);
             opacity: 0;
             visibility: hidden;
