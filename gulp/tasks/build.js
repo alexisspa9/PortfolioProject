@@ -11,13 +11,13 @@ browserSync = require('browser-sync').create();
 exports.previewDist = () => {
     browserSync.init({
         server: {
-            baseDir: "dist"
+            baseDir: "docs"
         }
     });
 }
 
 exports.deleteDistFolder = () => {
-    return del('./dist');
+    return del('./docs');
 };
 
 exports.copyGeneralFiles = () => {
@@ -31,7 +31,7 @@ exports.copyGeneralFiles = () => {
         '!./app/temp/**'
     ]
     return gulp.src(pathsToCopy)
-    .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./docs'))
 }
 
 
@@ -51,5 +51,5 @@ exports.useMin = () => {
         css: [() => rev(), () => cssnano()],
         js: [() => rev(), () => uglify()]
     }))
-    .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./docs'));
 };
