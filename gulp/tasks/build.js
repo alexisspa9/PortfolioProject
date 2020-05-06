@@ -42,7 +42,7 @@ exports.optimizeImages = () => {
         interlaced: true,
         multipass: true
     }))
-    .pipe(gulp.dest("./dist/assets/images"));
+    .pipe(gulp.dest("./docs/assets/images"));
 };
 
 exports.useMin = () => {
